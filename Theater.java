@@ -38,9 +38,11 @@ public class Theater
 	* Print method that prints theater name and all the shows and show times at said instance
 	*/
 	public void printTheaterDetails(){
+           System.out.println(theaterName);
 		for(Show show: shows){
 		  System.out.println(show.getInfo());
 		}
 	}
+	
 
 }
