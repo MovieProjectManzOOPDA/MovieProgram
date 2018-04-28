@@ -29,7 +29,7 @@ public class Customer {
 		 * @return name
 		 */
 		public String getName(){
-			
+			return name;	
 		}
 		
 		/**
@@ -37,7 +37,7 @@ public class Customer {
 		 * @param name
 		 */
 		public void setName(String name){
-			
+			this.name = name;
 		}
 		
 		/**
@@ -45,7 +45,7 @@ public class Customer {
 		 * @param phoneNumber
 		 */
 		public void setNumber(long phoneNumber){
-			
+			this.phoneNumber = phoneNumber;
 		}
 		
 		/**
@@ -53,6 +53,6 @@ public class Customer {
 		 * @return phoneNumber
 		 */
 		public long getNumber() {
-			
+			return phoneNumber;	
 		}
 }
