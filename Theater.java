@@ -15,7 +15,7 @@ public class Theater
 	*/
 	public Theater(String theaterName) 
 	{
-
+           this.theaterName = theaterName;
 	}
 	
 	/**
@@ -23,7 +23,7 @@ public class Theater
 	* @return theaterName
 	*/
 	public String getTheaterName(){
-		
+		return theaterName;
 	}
 	
 	/**
@@ -31,14 +31,16 @@ public class Theater
 	* @param show
 	*/
 	public void addShow(Show show){
-		
+		shows.add(show);
 	}
 	
 	/**
 	* Print method that prints theater name and all the shows and show times at said instance
 	*/
 	public void printTheaterDetails(){
-		
+		for(Show show: shows){
+		  System.out.println(show.getInfo());
+		}
 	}
 
 }
